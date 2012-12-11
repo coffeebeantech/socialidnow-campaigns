@@ -113,10 +113,17 @@
           s.setAttribute('id', 'socialid_campaign_script');
           var c = function(){
             if(typeof(SocialId) != 'undefined') {
+              var style = {
+                content: {
+                  "top": in_iframe ? "10%" : "15px",
+                }
+              };
+
               SocialId.Campaign.init({
                 campaign_id: 148,
                 closeLinkLabel: 'Fechar',
                 elementId: 'social-id-campaign-action',
+                style: style,
                 doc: w.document     
               });
             }
@@ -137,5 +144,9 @@
             return false;
         }
     </script>
-    
+
+    <div style="-webkit-transform: scale(0.8059701492537313); -webkit-transform-origin: 0% 0%;">
+        <iframe id="page" src="http://socialidnow.github.com/socialidnow-campaigns/dpny/esplendido2013/index.html" style="height: 1600px; width: 1005px;"></iframe>
+    </div>
+
 </body></html>
