@@ -1,0 +1,30 @@
+/* CSS Document */
+
+html, body{
+	height:100%;
+	font-size:1em;
+	background-color:transparent;
+}
+
+body {
+	background-color:transparent;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+.video embed,
+.video object,
+.video iframe {
+	width: 100%;
+	height: auto;
+}
+
+#pagewrap {
+	width:960px;
+	margin:0 auto;
+	z-index:10;
+}

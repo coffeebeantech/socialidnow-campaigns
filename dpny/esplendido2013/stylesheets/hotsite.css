@@ -1,0 +1,542 @@
+/* CSS Document */
+
+@font-face {
+	font-family:'Corbel';
+	src: url("../eot/corbel.eot"), /* EOT file for IE */
+		 url("../eot/corbelb.eot"),
+		 url("../eot/corbeli.eot"),
+		 url("../eot/corbelz.eot"),
+		 url("../eot/corbel.ttf"), /* TTF file for CSS3 browsers */
+		 url("../eot/corbelb.ttf"),
+		 url("../eot/corbeli.ttf"),
+		 url("../eot/corbelz.ttf");
+		 
+	font-family:'TrajanPro';
+	src: url("../eot/trajanpro-regular.eot"), /* EOT file for IE */
+		 url("../eot/trajanpro-bold.eot"),
+		 url("../eot/trajanpro-regular.ttf"), /* TTF file for CSS3 browsers */
+		 url("../eot/trajanpro-bold.ttf");
+
+	font-family:'Futura_MD_BT';
+    src: url('../eot/futura_md_bt_bold-webfont.eot');
+    src: url('../eot/futura_md_bt_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../eot/futura_md_bt_bold-webfont.woff') format('woff'),
+         url('../eot/futura_md_bt_bold-webfont.ttf') format('truetype'),
+         url('../eot/futura_md_bt_bold-webfont.svg#futura_md_btbold') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+body {
+	font-family:Corbel, "Segoe UI Light", Helvetica, Arial, sans-serif;
+	font-size:1em;
+	overflow-x:hidden;
+}
+
+#pagewrap {
+	position:relative;
+	height:100%;
+}
+
+header {
+	width:100%;
+	height:10px;
+	margin-bottom:40px;
+	position:relative
+}
+nav {
+	width:120px;
+}
+footer {
+	width:100%;
+}
+
+html {
+	background:url('../images/background.jpg') no-repeat top center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size:cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='crop');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/background.jpg', sizingMethod='crop')";
+}
+
+#menu {
+	display:block;
+	float:left;
+	width:360px;
+	height:531px;
+	text-align:center;
+	position:absolute;
+	top:0;
+	left:0;
+	margin-top:0;
+	padding-top:0;
+	background:url('../images/fundo-logo.png') no-repeat 0 0;
+}
+nav ul li {
+	width:289px;
+	min-height:27px;
+	margin-left:0;
+	margin-bottom:17px;
+}
+nav ul{
+	margin-top:70px;
+}
+nav ul li a {
+	color:#000;
+	font-family:"Futura_MD_BT";
+	font-size:14px;
+	text-transform:uppercase;
+}
+nav ul li a:hover {
+	color:#C3951B;
+}
+
+#content{ 
+	background:url('../images/fundo-texto-2.png') no-repeat;		
+	margin-left:130px;
+	width:830px;
+	height:100%;
+	min-height:860px;
+	position:absolute;
+	top:0; 
+	z-index:-1;
+	overflow:visible;
+}
+#content .reservas {
+	position:relative;
+	font-family:'Futura_MD_BT';
+	font-size:16px;
+	margin-top:50px;
+	margin-left:240px;
+}
+#content .reservas h2 {
+	margin-bottom:30px;
+	color:#BB9131;
+	text-transform:uppercase;
+	font-size:182px;
+}
+#content .reservas p {
+	position:relative;
+	font-family:"Futura_MD_BT", Corbel, Helvetica, Arial, sans-serif;;
+	font-size:12px;
+	margin-top:10px;
+	text-transform:uppercase;
+}
+#content .reservas a {
+	color:#000;
+}
+#content .reservas a:hover {
+	color:#C3951B;
+}
+#content .reservas img {
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+#content-reservas { 
+	background:url('../images/fundo-texto-3.png') no-repeat;		
+	margin-left:130px;
+	width:830px;
+	height:100%;
+	min-height:860px;
+	position:absolute;
+	top:0; 
+	z-index:-1;
+	overflow:visible;
+	text-transform:uppercase;
+}
+#content-reservas .reservas {
+	position:relative;
+	font-family:'Futura_MD_BT';
+	font-size:18px;
+	margin-top:40px;
+	margin-left:200px;
+}
+#content-reservas .reservas h2 {
+	margin-bottom:30px;
+	color:#BB9131;
+}
+#content-reservas .reservas p {
+	position:relative;
+	font-family:"Futura_MD_BT", Corbel, Helvetica, Arial, sans-serif;
+	font-size:14px;
+	margin-top:10px;
+}
+#content-reservas .reservas a {
+	color:#000;
+}
+#content-reservas .reservas a:hover {
+	color:#C3951B;
+}
+#content-reservas .reservas img {
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+#content-empty { 
+	background:none;
+	display:block;
+	margin:0;
+	padding:0;
+	width:830px;
+	top:0;
+	left:0;
+	height:100%;
+	position:absolute;
+	z-index:-1;
+}
+
+#content-big{ 
+	background:url('../images/fundo-texto-2.png') no-repeat;	
+	margin-left:130px;
+	width:830px;
+	min-height:860px;
+	position:absolute;
+	top:0; 
+	z-index:-1;
+	overflow:visible;
+}
+#content-big .titulo {
+	margin-left:240px;
+	margin-top:40px;
+	margin-bottom:10px;
+}
+#content-big .video {
+	margin-left:20px;
+	max-width:560px;
+	min-height:350px;
+}
+#content-big .video iframe {
+	width:580px;
+	height:315px;
+}
+#content-big .open-bar {
+	float:left;
+	margin-left:240px;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+#content-big .reservas {
+	position:relative;
+	font-family:'Futura_MD_BT';
+	font-size:18px;
+	margin-top:50px;
+	margin-left:240px;
+}
+#content-big .reservas h2 {
+	margin-bottom:30px;
+}
+#content-big .reservas p {
+	position:relative;
+	font-family:Corbel, Helvetica, Arial, sans-serif;
+	font-size:12px;
+	margin-top:10px;
+}
+#content-big .reservas a {
+	color:#000;
+}
+#content-big .reservas a:hover {
+	color:#fff;
+	border-bottom:1px dotted #fff;
+}
+#content-big .reservas > img {
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+#logo {
+	margin-left:48px;
+	width:255px;
+	height:119px;
+	top:30px;
+}
+
+footer {
+	position:relative;
+	margin:0 auto;
+	margin-top:30px;
+	margin-bottom:20px;
+	z-index:0;
+	text-align:center;
+}
+footer img {
+	margin-bottom:40px;
+}
+
+#rodape {
+	position:absolute;
+	width:100%;
+	height:200px;
+	bottom:0;
+	left:0;
+	margin-bottom:120px;
+	text-align:center;
+}
+#rodape ul {
+	position:relative;
+	list-style:none;
+	margin-left:90px;
+}
+#rodape ul li {
+	margin-right:85px;
+	position:relative;
+	float:left;
+}
+#rodape img {
+	margin-bottom:40px;
+}
+#rodape .patrocinio {
+	margin-left:200px;
+}
+
+.clear {
+	clear:both;
+}
+.artista, .galeria {
+	width:800px;
+	margin:0 auto;
+	margin-left:200px;
+	margin-bottom:40px;
+	clear:both;
+	z-index:10;
+}
+.galeria {
+	position:relative;
+	margin-left:220px;
+}
+.artista {
+	margin-bottom:20px;
+	margin-top:0;
+}
+.pull-up {
+	margin-top:-40px;
+}
+.pull-left {
+	margin-left:180px;
+}
+.artista .foto-artista {
+	float:left;
+	margin-top:10px;
+	width:240px;
+}
+.artista .foto-artista-small {
+	float:left;
+	width:100px;
+}
+.artista .nome-e-link {
+	float:left;
+	margin-top:50px;
+	width:380px;
+}
+.artista .nome-e-link-small {
+	clear:left;
+	margin-top:50px;
+	width:230px;
+}
+.artista .nome-e-link-small h4 {
+	color:#fff;
+}
+.artista .nome-e-link p {
+	margin-top:20px;
+	margin-bottom:30px;
+	width:360px;
+	line-height:18px;
+	font-family:"Futura_MD_BT";
+	text-transform:uppercase;
+	font-size:12px;
+}
+.artista h2, .artista h3 {
+	font-family:"Futura_MD_BT";
+	font-weight:bold;
+	color:#BC9230;
+	margin:0;
+}
+.artista h2 {
+	color:#BB9131;
+	text-transform:uppercase;
+	line-height:0;
+}
+.artista h3 a {
+	font-family:Corbel, Helvetica, Arial, sans-serif;
+	color:#000;
+}
+
+.galeria {
+	position:relative;
+	width:650px;
+	min-height:50%;
+}
+.fotos {
+	margin-top:150px;
+}
+.galeria ul {
+	position:relative;
+	list-style:none;
+}
+.galeria ul li .thumb {
+	float:left;
+	min-height:100px;
+	margin-left:20px;
+	margin-top:20px;
+	width:150px;
+}
+.galeria ul li .thumb {
+	width:140px;
+	border:10px solid #fff;
+	/*box-shadow:5px 5px 12px #999;
+	-moz-box-shadow:5px 5px 12px #999;
+	-webkit-box-shadow:5px 5px 12px #999;*/
+}
+
+.artista-small {
+	float:left;
+	width:180px;
+	margin:0;
+	margin-left:20px;
+	margin-bottom:50px;
+	z-index:10;
+}
+.alpha {
+	margin-left:200px;
+	margin-right:10px;
+}
+.first-line {
+	margin-top:50px;
+}
+.artista-small .foto-artista-small {
+	width:150px;
+	margin:0;
+}
+.artista-small .nome-e-link-small {
+	margin-top:15px;
+	width:180px;
+}
+.artista-small .nome-e-link-small h4 {
+	color:#fff;
+}
+.artista-small .nome-e-link-small p {
+	margin-top:10px;
+	margin-bottom:30px;
+	width:180px;
+	line-height:18px;
+	font-family:Corbel;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:12px;
+	font-family:"Futura_MD_BT";
+}
+.artista-small h2, .artista-small h3 {
+	font-family:"Futura_MD_BT";
+	color:#BC9230;
+	margin:0;
+	padding:0;
+}
+.artista-small h4 {
+	font-family:"Futura_MD_BT";
+	font-weight:bold;
+	color:#000;
+	margin:0;
+	padding:0;
+}
+.artista-small h2 {
+	color:#BB9131;
+	text-transform:uppercase;
+	line-height:0;
+	margin:0;
+	padding:0;
+}
+.artista-small h3 a {
+	margin:0;
+	line-height:0;
+	font-family:Corbel, Helvetica, Arial, sans-serif;
+	font-size:0.8em;
+	color:#000;
+}
+.artista-small h4 {
+	color:#BB9131;
+	text-transform:uppercase;
+}
+.artista-small h4 a {
+	margin:0;
+	line-height:0;
+	font-family:Corbel, Helvetica, Arial, sans-serif;
+	font-size:0.8em;
+	color:#000;
+}
+
+.last {
+	margin-bottom:40px;
+}
+.lotes {
+	width:461px;
+}
+
+#content-reservas .reservas p {
+	margin-bottom:30px;
+}
+#content-reservas .reservas p.iconic {
+	position:relative;
+	text-indent:40px;
+	margin-top:50px;
+	margin-bottom:20px;
+}
+#content-reservas .reservas .iconic img {
+	position:absolute;
+	top:-30px;
+	left:0;
+}
+#content-reservas .reservas table {
+	font-family:"Futura_MD_BT";
+	width:60%;
+	margin-top:50px;
+}
+#content-reservas .reservas table th {
+	font-weight:bold;
+	font-size:14px;
+	text-align:left;
+	height:30px;
+	color:#BB9131;
+}
+#content-reservas .reservas table td {
+	vertical-align:middle;
+	font-size:14px;
+	height:40px;
+}
+#content-reservas .reservas .esgotado {
+	text-decoration:line-through !important;
+}
+#content-reservas .reservas .limited {
+	color:#E20D17;
+}
+
+.artista .paragrafo {
+	width:630px;
+}
+.artista .paragrafo p {
+	margin-top:20px;
+	margin-bottom:30px;
+	width:620px;
+	line-height:18px;
+	font-family:"Futura_MD_BT";
+	text-transform:uppercase;
+	font-size:12px;
+}
+.artista .paragrafo h2 {
+	text-align:left;
+}
+h2.dourado {
+	width:630px;
+	color:#BB9131;
+	margin-top:30px;
+	margin-left:200px;
+	font-size:16px;
+	font-family:"Futura_MD_BT";
+	line-height:26px;
+	text-transform:uppercase;
+}
+h2.no-margin {
+	margin-left:0;
+}

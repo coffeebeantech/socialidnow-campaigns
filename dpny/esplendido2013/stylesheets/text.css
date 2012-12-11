@@ -1,0 +1,5 @@
+/* CSS Document */
+
+h1, h2, h3, h4, h5, h6, b, strong { font-weight:bold; font-style:normal; }
+p, a { font-size: inherit; font-weight:normal; font-style:normal; }
+i, address, em { font-style:italic; }
