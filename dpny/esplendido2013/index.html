@@ -102,7 +102,8 @@
     <script>
       //<![CDATA[
         (function(w){
-          var s = w.document.createElement('script');
+          var s = w.document.createElement('script'),
+              in_iframe = top !== self;
           if (document.location.protocol === 'https:') {
             s.setAttribute('src', 'https://app.socialidnow.com/javascripts/marketing/registration_widget.js?1355140592');
           } else {
