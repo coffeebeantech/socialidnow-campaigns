@@ -102,8 +102,7 @@
     <script>
       //<![CDATA[
         (function(w){
-          var s = w.document.createElement('script'),
-              in_iframe = top !== self;
+          var s = w.document.createElement('script');
           if (document.location.protocol === 'https:') {
             s.setAttribute('src', 'https://app.socialidnow.com/javascripts/marketing/registration_widget.js?1355140592');
           } else {
@@ -114,17 +113,10 @@
           s.setAttribute('id', 'socialid_campaign_script');
           var c = function(){
             if(typeof(SocialId) != 'undefined') {
-              var style = {
-                content: {
-                  "top": in_iframe ? "10%" : "15px",
-                }
-              };
-
               SocialId.Campaign.init({
                 campaign_id: 148,
                 closeLinkLabel: 'Fechar',
                 elementId: 'social-id-campaign-action',
-                style: style,
                 doc: w.document     
               });
             }
