@@ -35,6 +35,9 @@
             <nav id="menu">
                 <a href="http://www.dpny.com.br/esplendido2013/index.html">
                 <div id="logo"></div>
+                <div class="menu-social-id-campaign">
+                    <a href="#" id="social-id-campaign-action" class="social-id-campaign-link">Reserve Aqui</a>
+                </div>
                 </a>
             </nav>
         </header>
@@ -74,6 +77,12 @@
                 </div>
             </div>
             <div class="clear"></div>
+
+            <div class="social-id-campaign">
+                <a href="#" id="social-id-campaign-action2" class="social-id-campaign-link" onclick="">Reserve Aqui</a>
+            </div>
+
+            <div class="clear"></div>
             
         	<footer>
             	<img src="images/patrocinadores.png" alt="Heineken | Chandon | Belvedere | Jhonnie Walker" class="patrocinio"><br>
@@ -89,4 +98,44 @@
     <!--[if lt IE 9]>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
+
+    <script>
+      //<![CDATA[
+        (function(w){
+          var s = w.document.createElement('script');
+          if (document.location.protocol === 'https:') {
+            s.setAttribute('src', 'https://app.socialidnow.com/javascripts/marketing/registration_widget.js?1355140592');
+          } else {
+            s.setAttribute('src', 'http://app.socialidnow.com/javascripts/marketing/registration_widget.js?1355140592');
+          }
+          s.setAttribute('type', 'text/javascript');
+          s.setAttribute('async', true);
+          s.setAttribute('id', 'socialid_campaign_script');
+          var c = function(){
+            if(typeof(SocialId) != 'undefined') {
+              SocialId.Campaign.init({
+                campaign_id: 148,
+                closeLinkLabel: 'Fechar',
+                elementId: 'social-id-campaign-action',
+                doc: w.document     
+              });
+            }
+          };
+          if(w.navigator.userAgent.match(/MSIE/)){
+            s.onreadystatechange = c;
+          }else{
+            s.addEventListener('load', c);
+          }
+          w.document.getElementsByTagName('head')[0].appendChild(s);
+        }(window));
+      //]]>
+    </script>
+
+    <script>
+        document.getElementById('social-id-campaign-action2').onclick = function(){
+            document.getElementById('social-id-campaign-action').click(); 
+            return false;
+        }
+    </script>
+    
 </body></html>
