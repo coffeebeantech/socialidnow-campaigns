@@ -1,0 +1,51 @@
+<html>
+  <head>
+
+    <script>
+      //<![CDATA[
+        (function(w){
+          var s = w.document.createElement('script');
+          if (document.location.protocol === 'https:') {
+            s.setAttribute('src', 'https://app.socialidnow.com/javascripts/marketing/registration_widget.js?1360024663');
+          } else {
+            s.setAttribute('src', 'http://app.socialidnow.com/javascripts/marketing/registration_widget.js?1360024663');
+          }
+          s.setAttribute('type', 'text/javascript');
+          s.setAttribute('async', true);
+          s.setAttribute('id', 'socialid_campaign_script');
+          var c = function(){
+            if(typeof(SocialId) != 'undefined') {
+              SocialId.Campaign.init({
+                campaign_id: 177,
+                closeLinkLabel: 'Fechar',
+                elementId: 'social-id-campaign-link',
+                mode: 'embedded',
+                doc: w.document     
+              });
+            }
+          };
+          if(w.navigator.userAgent.match(/MSIE/)){
+            s.onreadystatechange = c;
+          }else{
+            s.addEventListener('load', c);
+          }
+          w.document.getElementsByTagName('head')[0].appendChild(s);
+        }(window));
+      //]]>
+    </script>
+
+    <style>
+      #social-id-campaign-link {
+        width: 600px;
+        height: 700px;
+        margin: auto;
+        border: 3px solid #CCCCCC;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="social-id-campaign-link"></div>
+  </body>
+
+</html>

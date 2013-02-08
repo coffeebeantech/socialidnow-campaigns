@@ -1,0 +1,64 @@
+<html>
+  <head>
+
+    <script>
+      //<![CDATA[
+        (function(w){
+          var s = w.document.createElement('script');
+          if (document.location.protocol === 'https:') {
+            s.setAttribute('src', 'https://app.socialidnow.com/javascripts/marketing/registration_widget.js?1360024663');
+          } else {
+            s.setAttribute('src', 'http://app.socialidnow.com/javascripts/marketing/registration_widget.js?1360024663');
+          }
+          s.setAttribute('type', 'text/javascript');
+          s.setAttribute('async', true);
+          s.setAttribute('id', 'socialid_campaign_script');
+          var c = function(){
+            if(typeof(SocialId) != 'undefined') {
+              //associe-se
+              SocialId.Campaign.init({
+                campaign_id: 176,
+                closeLinkLabel: 'Fechar',
+                elementId: 'social-id-associe-se-link',
+                doc: w.document     
+              });
+
+              //contato
+              SocialId.Campaign.init({
+                campaign_id: 177,
+                closeLinkLabel: 'Fechar',
+                elementId: 'social-id-contato-link',
+                doc: w.document     
+              });
+
+              //newsletter
+              SocialId.Campaign.init({
+                campaign_id: 178,
+                closeLinkLabel: 'Fechar',
+                elementId: 'social-id-newsletter-link',
+                doc: w.document     
+              });
+            }
+          };
+          if(w.navigator.userAgent.match(/MSIE/)){
+            s.onreadystatechange = c;
+          }else{
+            s.addEventListener('load', c);
+          }
+          w.document.getElementsByTagName('head')[0].appendChild(s);
+        }(window));
+      //]]>
+    </script>
+
+
+  </head>
+
+  <body>
+    <ul>
+      <li>Associe-se <a href="#" id="social-id-associe-se-link">(modal)</a> <a href="wtcclub-associe-se.html">(embedded)</a></li>
+      <li>Contato <a href="#" id="social-id-contato-link">(modal)</a> <a href="wtcclub-contato.html">(embedded)</a></li>
+      <li>Newsletter <a href="#" id="social-id-newsletter-link">(modal)</a> <a href="wtcclub-newsletter.html">(embedded)</a></li>
+    </ul>
+  </body>
+
+</html>
